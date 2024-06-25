@@ -1,0 +1,28 @@
+
+    [package]
+    name = "pocketcasts"
+    version = "0.1.4"
+    authors = ["Francesco Ceccon <francesco@ceccon.me>"]
+    edition = "2018"
+    description = "Pocketcasts (unofficial) API client."
+    license = "Apache-2.0"
+    readme = "README.md"
+    homepage = "https://git.sr.ht/~fra/pocketcasts-rs"
+    repository = "https://git.sr.ht/~fra/pocketcasts-rs"
+    documentation = "https://docs.rs/pocketcasts"
+    keywords = ["pocketcasts", "podcast"]
+
+    [dependencies]
+    dotenv = "0.15.0"
+    failure = "0.1.6"
+    failure_derive = "0.1.6"
+    once_cell = "1.2.0"
+    serde_json = "1.0"
+    serde = "1.0"
+    serde_derive = "1.0"
+    tokio = "=0.2.0-alpha.6"
+    tokio-test = "=0.2.0-alpha.6"
+
+    [dependencies.reqwest]
+    version = "0.10.0-alpha.2"
+    features = ["json"]

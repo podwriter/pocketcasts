@@ -1,0 +1,16 @@
+image: alpine/edge
+packages:
+  - rust
+  - cargo
+  - openssl-dev
+secrets:
+  - 42835739-c6e4-43b5-9246-83c32f6024b5
+sources:
+  - https://git.sr.ht/~fra/pocketcasts-rs
+tasks:
+  - build: |
+      cd pocketcasts-rs
+      cargo build
+  - test: |
+      cd pocketcasts-rs
+      cargo test
