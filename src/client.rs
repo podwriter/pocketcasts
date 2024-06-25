@@ -2,8 +2,6 @@ use super::error::PocketcastsError;
 use super::model::episode::{Episode, NewReleases};
 use super::model::podcast::UserPodcasts;
 use super::model::subscription::SubscriptionStatus;
-use failure;
-use reqwest;
 use reqwest::header::{HeaderMap, AUTHORIZATION, CONTENT_TYPE};
 
 static API_URL: &str = "https://api.pocketcasts.com";
